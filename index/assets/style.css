@@ -1,0 +1,621 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0C1117 ;
+}
+
+* {
+    scrollbar-color: #003ADB black;
+    scrollbar-width: thin;
+}
+
+.container{
+    width: min(100%,1440px);
+    margin: auto;
+}
+
+.header{
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.logoHeader{
+    float: left;
+    margin-top: 5px;
+    align-content: center;
+    display: flex;
+    padding: 9px;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.logoHeader:hover{
+    box-shadow: 0 0 10px white;
+    scale: 105%;
+}
+
+.menu{
+    display: flex;
+    float: right;
+}
+
+.menu .search{
+    padding: 26px;
+    margin-left: 10px;
+}
+
+.menu .search i{
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.menu .search:hover i{
+    text-shadow: 0 0 5px white;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li{
+    padding: 15px;
+    font-size: 17px;
+    transition: 0.1s;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.menu ul li:hover{
+    border-bottom: 3px solid #003ADB;
+    text-shadow: 0 0 5px white;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*section1*/
+
+.section1{
+    width: 100%;
+    display: flex;
+    margin-top: 225px;
+    margin-bottom: 100px;
+}
+
+.section1 .topTitle{
+    width: 100%;
+    margin-left: 145px;
+}
+
+.section1 .topTitle h1{
+    font-size: 83px;
+    font-weight: bold;
+    color: white;
+}
+
+.section1 .topSub{
+    width: 75%;
+    color: #9d9d9d;
+    margin-top: 25px;
+}
+
+.section1 .topSub span{
+    color: white;
+    background-color: #003ADB;
+    border-radius: 30px;
+    padding: 15px;
+    width: 142px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+.section1 .topSub span:hover{
+    box-shadow: 0 10px 30px 0 rgba(64, 106, 255, 0.24);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 105%;
+}
+
+.section1 .topPagePagination {
+    width: 234px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    color: white;
+    scale: 170%;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 75px;
+    cursor: pointer;
+}
+
+.section1 .topPagePagination .whiteBox{
+    width: 132px;
+    height: 2px;
+    background-color: white;
+    margin: 7px;
+}
+
+.section1 .topPagePagination .whiteBox .blueBox{
+    width: 45px;
+    height: 2px;
+    background-color: #003ADB;
+    box-shadow: 0 2px 14px 0 rgba(64, 140, 255, 0.24);
+}
+
+.section1 .topImg{
+    transition: 0.3s;
+    margin-right: 8px;
+}
+
+.section1 .topImg:hover{
+    scale: 102%;
+    cursor: pointer;
+}
+
+/*section 2*/
+
+.section2Title{
+    font-size: 48px;
+    text-align: center;
+    width: auto;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+}
+
+.section2{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.section2 .servicesCard{
+    width: 280px;
+    height: 305px;
+    background: rgba(27, 40, 55, 1);
+    padding: 25px 0 0 15px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px 0 white;
+}
+
+.section2 .servicesCard:hover{
+    box-shadow: none;
+    cursor: pointer;
+    scale: 95%;
+}
+
+.section2 .servicesCard h2{
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.section2 .servicesCard p{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-right: 13px;
+}
+
+.section2 .servicesCard span{
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section2 .servicesCard span:hover{
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+}
+
+.section2 .cardLogo{
+    position: absolute;
+    bottom: 102px;
+    right: 136px;
+}
+
+.section2 .cardLogo .animationCardBg{
+    background-color: #003ADB;
+    position: absolute;
+    z-index: 0;
+    border-radius: 70px 0 4px 4px;
+    width: 136px;
+    height: 102px;
+    transition: 0.7s;
+    box-shadow: 0 10px 29px 0 rgba(64, 129, 255, 0.24);
+
+}
+
+.section2 .servicesCard:hover .animationCardBg{
+    height: 300px;
+    scale: 250%;
+    border-radius: 40%;
+    width: 257px;
+}
+
+.section2 .cardLogo .logo{
+    margin: 25px 0px 0px 45px;
+    position: absolute;
+    z-index: 1;
+}
+
+.section2 .servicesCard2{
+    width: auto;
+}
+
+.section2 .servicesCard2 h2{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 45%;
+    line-height: 46px;
+}
+
+.section2 .servicesCard2 p{
+    color: whitesmoke;
+    width: 65%;
+    margin-top: 25px;
+    margin-left: 60px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.section2 .servicesCard2 span{
+    color: white;
+    background-color: #003ADB;
+    border-radius: 30px;
+    padding: 15px;
+    width: 142px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 50px;
+    transition: 0.3s;
+    margin-left: 60px;
+}
+
+.section2 .servicesCard2 span:hover{
+    box-shadow: 0 10px 30px 0 rgba(64, 106, 255, 0.24);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 105%;
+}
+
+/*section3*/
+
+.section3Title{
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.section3 .section3Img{
+    margin: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.section3 .section3Img:hover{
+    scale: 80%;
+}
+
+.section3 #el1{
+    width: 301px;
+    height: 376px;
+}
+.section3 #el2{
+    width: 560px;
+    height: 376px;
+}
+.section3 #el3{
+    width: 363px;
+    height: 376px;
+}
+.section3 #el4{
+    width: 298px;
+    height: 376px;
+}
+.section3 #el5{
+    width: 654px;
+    height: 376px;
+}
+
+.section3 .section3More{
+    width: 315px;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+
+.section3 .section3More h2{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 45%;
+    line-height: 46px;
+}
+
+.section3 .section3More p{
+    color: whitesmoke;
+    width: 65%;
+    margin-top: 25px;
+    margin-left: 60px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.section3 .section3More span{
+    color: white;
+    background-color: #003ADB;
+    border-radius: 30px;
+    padding: 15px;
+    width: 142px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 50px;
+    transition: 0.3s;
+    margin-left: 60px;
+}
+
+.section3 .section3More span:hover{
+    box-shadow: 0 10px 30px 0 rgba(64, 106, 255, 0.24);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 105%;
+}
+
+/*section4*/
+
+.section4{
+    width: 100%;
+    background-color: #2B61F7;
+    margin-bottom: 100px;
+}
+
+.section4 .siteStatistics:last-child{
+    border: none;
+}
+
+.section4 .siteStatistics {
+    padding: 49px;
+    border-right: 1px solid #408BE8 ;
+    text-align: center;
+    margin: 45px 0 45px 0;
+    transition: 0.5s;
+}
+
+.section4 .siteStatistics:hover {
+    scale: 105%;
+    cursor: pointer;
+}
+
+.section4 .siteStatistics p{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.section4 .siteStatistics span{
+    color: #8FC2FF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*section5*/
+.section5{
+    margin-bottom: 100px;
+}
+
+.section5 .col-5:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
+.section5 .section5Part2{
+    padding: 70px;
+}
+
+.section5 .section5Part2 h3{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section5 .section5Part2 span{
+    color: #D0D0D0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section5 .section5Part2 .p1{
+    color: #727272;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section5 .section5Part2 .p2{
+    display: flex;
+    width: 668px;
+    height: 107px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: white;
+}
+
+.section5 .topPagePagination {
+    width: 234px;
+    height: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    scale: 170%;
+    font-weight: bold;
+    margin-top: 230px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+
+.section5 .topPagePagination .whiteBox{
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    margin: 7px;
+    transform: rotate(90deg);
+}
+
+.section5 .topPagePagination .whiteBox .blueBox{
+    width: 50px;
+    height: 3px;
+    background-color: #003ADB;
+    box-shadow: 0 2px 14px 0 rgba(64, 140, 255, 0.24);
+}
+
+/*section6*/
+.section6{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.section6titleText{
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 50px;
+}
+
+.section6 .personInfo{
+    width: 294px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 33px;
+    transition: 0.3s;
+    border-radius: 4px;
+    position: relative;
+}
+
+.section6 .personInfo:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
+.section6 .personInfo img{
+    transition: 0.3s;
+}
+
+.section6 .personInfo:hover img{
+    filter: blur(5px);
+}
+
+.section6 .personInfo .overlyText{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2B61F7;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.section6 .personInfo:hover .overlyText{
+    height: 100%;
+}
+
+.section6 .personInfo .overlyText .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.section6 .personInfo .overlyText .text h4{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section6 .personInfo .overlyText .text span{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section6 .personInfo .overlyText .text p{
+    color: #95C8FF;;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section6 .personInfo .overlyText .text .socialMediaPerson{
+    display: flex;
+    justify-content: center;
+}
+
+.section6 .personInfo .overlyText .text .socialMediaPerson i{
+    padding: 20px;
+    margin-top: 40px;
+}
