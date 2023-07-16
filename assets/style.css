@@ -522,7 +522,7 @@ body{
 .section6{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .section6titleText{
@@ -618,4 +618,397 @@ body{
 .section6 .personInfo .overlyText .text .socialMediaPerson i{
     padding: 20px;
     margin-top: 40px;
+}
+
+/*section7*/
+.section7TopTitle{
+    font-size: 48px;
+    text-align: center;
+    width: auto;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 50px;
+}
+
+.section7{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section7 .subjectInfo{
+    border-radius: 0 90px 0 0;
+    background: #11161C;
+    width: 400px;
+    height: 680px;
+    flex-shrink: 0;
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 6px solid #003ADB;
+}
+
+.section7 .subjectInfo .subjectInfoImg{
+    position: relative;
+    z-index: 1;
+    margin: 20px;
+    width: 90%;
+    height: 56%;
+    overflow: hidden;
+    border-radius: 0 90px 0 0;
+    transition: 0.3s;
+}
+
+.section7 .subjectInfo .subjectInfoImg .subInfoImg{
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 125px;
+    height: 53px;
+    border-radius: 4px 70px 0 0;
+    background: #003ADB;
+    box-shadow: 0 10px 29px 0 rgba(64, 129, 255, 0.24);
+    text-align: center;
+    color: white;
+    padding: 14px 17px 0 0;
+    font-weight: bold;
+}
+
+.section7 .subjectInfo .subjectInfoContent{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 461px;
+    height: 454px;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.section7 .subjectInfo .subjectInfoContent span{
+   display: flex;
+    justify-content: space-between;
+    color: #727272;
+    margin: 195px 85px 20px 20px;
+    transition: 0.3s;
+}
+
+.section7 .subjectInfo .subjectInfoContent h5{
+    color: #D0D0D0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding: 0 0 0 20px;
+}
+
+.section7 .subjectInfo .subjectInfoContent p{
+    color: #727272;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 0 80px 0 20px;
+    transition: 0.3s;
+}
+
+.section7 .subjectInfo:hover{
+    scale: 105%;
+}
+
+.section7 .subjectInfo:hover .subjectInfoContent{
+    background: #003ADB;
+    box-shadow: 0 3px 12px 0 rgba(64, 129, 255, 0.24);
+}
+
+.section7 .subjectInfo:hover .subjectInfoImg{
+    box-shadow: 0 3px 12px 0 rgba(64, 129, 255, 0.24);
+}
+
+.section7 .subjectInfo:hover .subjectInfoContent span{
+    color: #89A8FF;
+}
+
+.section7 .subjectInfo:hover .subjectInfoContent p{
+    color: #FFF;
+}
+
+/*section8*/
+
+.section8{
+    width: 100%;
+    background-color: #0A0F14;
+    padding: 15px 0;
+    margin-bottom: 100px;
+}
+
+.section8 .section8TitleText{
+    font-size: 48px;
+    text-align: left;
+    width: auto;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.section8 .section8logos{
+    display: flex;
+}
+
+.section8 .section8logos img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+/*section9*/
+.section9{
+    margin-bottom: 100px;
+}
+
+.section9 .section9TopTitle{
+    font-size: 48px;
+    text-align: center;
+    width: auto;
+    color: white;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.section9 .formPart .account label{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding: 15px 0;
+}
+
+.section9 .formPart .account input{
+    background: none;
+    border: none;
+    color: #2E2E2E;
+    border-bottom: 1px solid #536A82;
+    padding: 15px 0;
+    width: 80%;
+}
+
+.section9 .formPart .account input:focus-visible{
+    outline: none;
+    color: white;
+}
+
+.section9 .formPart .account button{
+    color: white;
+    background-color: #003ADB;
+    border-radius: 30px;
+    padding: 15px;
+    width: 165px;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 50px;
+    transition: 0.3s;
+    margin-right: 30px;
+    border: none;
+}
+
+.section9 .formPart .account button:is(:hover , :focus){
+    box-shadow: 0 10px 30px 0 rgba(64, 106, 255, 0.24);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 105%;
+}
+
+.section9 .formPart .contactWithUs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.section9 .formPart .contactWithUs .mobileNumber{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 285px;
+}
+
+.section9 .formPart .contactWithUs .mobileNumber span{
+    color: #B6B6B6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+}
+
+.section9 .formPart .contactWithUs .mobileNumber span button{
+    color: white;
+    background-color: #003ADB;
+    border-radius: 30px;
+    padding: 8px;
+    width: 105px;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 20px;
+    transition: 0.3s;
+    margin-right: 30px;
+    border: none;
+    margin-left: 20px;
+}
+
+.section9 .formPart .contactWithUs .mobileNumber span button:hover{
+    box-shadow: 0 10px 30px 0 rgba(64, 106, 255, 0.24);
+    font-weight: bold;
+    cursor: pointer;
+    scale: 105%;
+}
+
+.section9 .formPart .contactWithUs .email{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 285px;
+    margin-top: 70px;
+}
+
+.section9 .formPart .contactWithUs .email span{
+    color: #B6B6B6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-top: 20px;
+}
+
+.section9 .formPart .contactWithUs .address{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 285px;
+    margin-top: 70px;
+}
+
+.section9 .formPart .contactWithUs .address span{
+    color: #B6B6B6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-top: 20px;
+}
+
+.map{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 136px;
+    height: 102px;
+    border-radius: 70px 0 4px 4px;
+    background: #003ADB;
+    color: white;
+    cursor: pointer;
+}
+
+.map img{
+    right: 40px;
+    position: absolute;
+    bottom: 30px;
+}
+
+/*footer*/
+footer{
+    background: #0A0F14;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+    gap: 38px;
+}
+
+footer .span1{
+    color: #787878;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    width: 559px;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+footer ul li{
+    padding: 15px;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer ul li:hover{
+    scale: 105%;
+    text-shadow: 0 2px 3px rgba(255, 255, 255, 1);
+}
+
+footer .span2 i{
+    padding: 20px;
+    color: white;
+    scale: 150%;
+    cursor: pointer;
+}
+
+footer .span3{
+    color: #787878;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    width: 559px;
+    text-align: center;
+}
+
+/*scroll-top*/
+
+.scroll-top{
+    background-color: #003ADB;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 999;
+    color: white;
+    padding: 20px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
 }
