@@ -864,7 +864,7 @@ body{
     background-color: #003ADB;
     border-radius: 30px;
     padding: 8px;
-    width: 105px;
+    width: 85px;
     display: inline-block;
     font-size: 19px;
     margin-top: 20px;
@@ -1011,4 +1011,5 @@ footer .span3{
     width: 65px;
     height: 65px;
     text-align: center;
+    cursor: pointer;
 }

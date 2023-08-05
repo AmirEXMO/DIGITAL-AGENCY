@@ -1,0 +1,5 @@
+@media screen and ( max-width: 17550px ){
+    .header .logoHeader{
+        display: block !important;
+    }
+}
